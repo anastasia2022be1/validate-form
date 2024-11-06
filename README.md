@@ -22,7 +22,23 @@ The project includes:
 - Button State:
   The "Send" button is disabled if either the username or email is invalid.
 
+  ## Redux
+
+Although not included in this example, Redux is often used in larger React applications for managing global state. If you want to manage the form state, such as the validation error messages, across multiple components, Redux can help centralize and manage that state effectively. For more details, check out the [Redux documentation](https://react-redux.js.org/introduction/getting-started).
+
+## validator Package
+
+The `validator` package is a widely used npm package that offers a variety of string validation methods. For this project, we use the `isEmail` method from the package to check if the email entered by the user is in a valid format.
+
+- **Official Documentation**: [validator on npm](https://www.npmjs.com/package/validator)
+- **Usage Example**:
+  ```
+  import validator from 'validator';
+  console.log(validator.isEmail('user@example.com'));  // true
+  ```
+
 ## Dependencies
 
-- React
-- validator (npm package)
+- **React**: A JavaScript library for building user interfaces.
+
+- **validator** (npm package): A popular string validation library that includes methods like isEmail for email validation and many more.
